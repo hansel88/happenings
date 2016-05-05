@@ -54,6 +54,18 @@
    margin: 0 !important;
 }
 
+@media screen and (max-width: 995px) , screen and (max-height: 700px) {
+  .center-block img{
+        max-width: 100%;
+        max-height: 150px;
+    }
+
+    #side .row{
+        margin-top: 0.8em;
+        font-size: 0.8em;
+    }
+}
+
 @media (min-width: 768px)
 {
     .navbar-header
@@ -107,7 +119,7 @@
     position: absolute;
     height: 100%;
     width: 0;
-    max-width: 700px;
+    max-width: 800px;
     left: 0;
     z-index: 99;
     top: 0;
@@ -124,20 +136,26 @@
 }
 
 #side .row{
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 1.3em;
+    position: relative;
 }
 
-#side a{
+#side #about a{
     color: white;
     text-decoration: none;
     font-size: 1.2em;
     display: inline-block;
-    margin-top: 5em;
     border: 1px solid white;
     padding: 0.3em 0.3em 0.3em;
 }
 
+#side #about{
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    width: 100%;
+}
 body{
     background-color: #1D5ACE;
     color: white;

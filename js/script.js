@@ -43,7 +43,7 @@ init = function(){
 
 	$('.navbar-toggle').click(function(){
 		if($('#side').css('width') == '0px'){
-			$('#side').animate({width: "70%"}, 500);
+			$('#side').animate({width: "80%"}, 500);
 			$('#side').css('display', 'block'); 
 			$('#side-container').delay(300).animate({opacity: 1 }, 700);
 		}
