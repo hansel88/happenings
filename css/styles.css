@@ -189,3 +189,13 @@ body{
 .slider.off {
     left: 0;
 }
+.event-detail-list{
+    padding-left: 0;
+}
+.info-text{
+    padding: 0em 2em;
+}
+.check-in-button-details{
+    float: right;
+    padding-right: 0.4em;
+}
