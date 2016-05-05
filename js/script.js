@@ -31,6 +31,13 @@ function getParameterByName(name, url) {
 		window.location.href = "details.html";
   });
 
+	var image = 'https://bluedogtraining.com.au/assets/images/frontend/ui/icons/icon_small_location.png';
+	var marker2 = new google.maps.Marker({
+        position: {lat: 59.913810, lng: 10.752200},
+        map: map,
+        icon: image,
+    	title: 'Your location'
+    });
    $( window ).resize(function() {
 	    $('#map').css('height', window.innerHeight+'px');
 	    $('#map').css('width', window.innerWidth+'px');
