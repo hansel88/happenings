@@ -22,13 +22,14 @@ function getParameterByName(name, url) {
 
   var marker = new google.maps.Marker({
     position: {lat: 59.913897, lng: 10.749489},
+    label: 'Sentrum Scene',
     map: map,
     title: 'Sentrum Scene'
   });
 
- 	google.maps.event.addListener(marker, 'click', function() {
-        window.location('');        
-    });
+    marker.addListener('click', function() {
+		window.location.href = "details.html";
+  });
 
    $( window ).resize(function() {
 	    $('#map').css('height', window.innerHeight+'px');
