@@ -147,7 +147,12 @@
     font-size: 1.2em;
     display: inline-block;
     border: 1px solid white;
-    padding: 0.3em 0.3em 0.3em;
+     padding: 0.35em 0.7em 0.35em;
+}
+
+#side #about a:hover{
+    color: #1D5ACE;
+    background-color: white !important;
 }
 
 #side #about{

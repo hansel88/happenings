@@ -40,6 +40,7 @@ function getParameterByName(name, url) {
 
 init = function(){
 	var chosenActivity = getParameterByName('activity');
+	//$('#selectedActivity').text('- Nearby ' + chosenActivity);
 	initMap();
 
 	$('.navbar-toggle').click(function(){
