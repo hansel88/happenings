@@ -188,7 +188,7 @@
 
 body{
     background-color: #1D5ACE;
-      background-color: #222;
+    background-color: #222;
     color: white;
 }
 
@@ -226,4 +226,44 @@ body{
 }
 .details-header{
     display: inline;
+}
+
+.list-view img{
+    max-width: 90%;
+    margin-bottom: 0.5em;
+}
+
+.list-view .row{
+    margin-bottom: 1.2em;
+}
+
+.list-view .rating{
+    height: 40px;
+}
+
+.list-view a{
+    display: block;
+}
+
+.list-view .walk-img{
+    height: 30px;
+    margin-left: -5em;
+}
+
+.list-view .line-img{
+    height: 50px;
+}
+
+.list-view .walk-info{
+    position: relative;
+    margin: 1em;
+}
+
+.list-view .walk-text{
+    margin: 0;
+    display: inline;
+    margin-left: 1em;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 10px;
 }
