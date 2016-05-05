@@ -128,6 +128,16 @@
     font-size: 1.3em;
 }
 
+#side a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 5em;
+    border: 1px solid white;
+    padding: 0.3em 0.3em 0.3em;
+}
+
 body{
     background-color: #1D5ACE;
     color: white;
