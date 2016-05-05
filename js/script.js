@@ -43,7 +43,7 @@ init = function(){
 	//$('#selectedActivity').text('- Nearby ' + chosenActivity);
 	initMap();
 
-	$('.navbar-toggle').click(function(){
+	$('#settings-btn').click(function(){
 		if($('#side').css('width') == '0px'){
 			$('#side').animate({width: "80%"}, 500);
 			$('#side').css('display', 'block'); 
