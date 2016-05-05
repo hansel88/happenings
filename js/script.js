@@ -43,9 +43,9 @@ init = function(){
 
 	$('.navbar-toggle').click(function(){
 		if($('#side').css('width') == '0px'){
-			$('#side').animate({width: "50%"}, 500);
+			$('#side').animate({width: "70%"}, 500);
 			$('#side').css('display', 'block'); 
-			$('#side-container').delay(200).animate({opacity: 1 }, 700);
+			$('#side-container').delay(300).animate({opacity: 1 }, 700);
 		}
 		else if($('#side').css('width') != 0){
 			$('#side').delay(300).animate({width: 0 }, 300);
@@ -60,6 +60,8 @@ init = function(){
 		}
 
 	});
+
+	$("[name='my-checkbox']").bootstrapSwitch();
 };
 
 function replaceClass(elt, oldClass, newClass) {

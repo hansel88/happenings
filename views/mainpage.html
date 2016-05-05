@@ -14,6 +14,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/bootstrap-switch.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
     <style>
@@ -59,15 +61,20 @@
     <div id="map"></div>
     <div id="side">
         <div id="side-container" class="center-block">
-
-
-                    <img src="../assets/round-portrait.png" class="col-6" />
-                    <h3>Logged in as Julie</h3>
-
-                    <div class="toggleSwitch" onclick="toggle(this.firstChild, 'on', 'off');"><div class="slider off" /></div>
-
-            <!-- /.row -->
-
+            <img src="../assets/round-portrait.png" class="col-6" />
+            <h3>Logged in as Julie</h3>
+            <div class="row">
+                <label class="pull-left">Location</label>
+                <input type="checkbox" name="my-checkbox" checked>
+            </div>
+            <div class="row">
+                <label class="pull-left">Show friends</label>
+                <input type="checkbox" name="my-checkbox" checked>
+            </div>
+            <div class="row">
+                <label class="pull-left">Update automatically</label>
+                <input type="checkbox" name="my-checkbox" checked>
+            </div>
         </div>
     </div>
 
@@ -82,6 +89,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="../js/bootstrap-switch.js"></script>
     <script src="../js/script.js"></script>
 
 </body>
