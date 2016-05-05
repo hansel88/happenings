@@ -37,10 +37,6 @@ function getParameterByName(name, url) {
 
   }
 
-
-
-
-
 init = function(){
 	var chosenActivity = getParameterByName('activity');
 	initMap();
@@ -48,19 +44,36 @@ init = function(){
 	$('.navbar-toggle').click(function(){
 		if($('#side').css('width') == '0px'){
 			$('#side').animate({width: "50%"}, 500);
+			$('#side').css('display', 'block'); 
+			$('#side-container').delay(200).animate({opacity: 1 }, 700);
 		}
 		else if($('#side').css('width') != 0){
-			$('#side').animate({width: "0"}, 500);
+			$('#side').delay(300).animate({width: 0 }, 300);
+			$('#side-container').animate({opacity: 0 }, 200); 
 		}
 	});
 
 	$('#map').click(function(){
 		if($('#side').css('width') != 0){
-			$('#side').animate({width: "0"}, 500);
+			$('#side').delay(300).animate({width: 0 }, 300);
+			$('#side-container').animate({opacity: 0 }, 200); 
 		}
 
 	});
 };
+
+function replaceClass(elt, oldClass, newClass) {
+    var oldRE = RegExp('\\b'+oldClass+'\\b');
+    elt.className = elt.className.replace(oldRE, newClass);
+}
+function toggle(elt, on, off) {
+    var onRE = RegExp('\\b'+on+'\\b');
+    if (onRE.test(elt.className)) {
+        elt.className = elt.className.replace(onRE, off);
+    } else {
+        replaceClass(elt, off, on);
+    }
+}
 
 init();
 
