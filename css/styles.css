@@ -184,3 +184,6 @@ body{
 .slider.off {
     left: 0;
 }
+.event-detail-list{
+    padding-left: 0;
+}
