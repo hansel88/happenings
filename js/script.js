@@ -49,6 +49,9 @@ init = function(){
 		if($('#side').css('width') == '0px'){
 			$('#side').animate({width: "50%"}, 500);
 		}
+		else if($('#side').css('width') != 0){
+			$('#side').animate({width: "0"}, 500);
+		}
 	});
 
 	$('#map').click(function(){

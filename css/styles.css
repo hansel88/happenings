@@ -50,6 +50,15 @@
     max-width: 300px;
 }
 
+.navbar-inverse{
+   margin: 0 !important;
+}
+
+#map{
+    position: absolute;
+    top: 0;
+}
+
 .option-button:hover{
     color: #1D5ACE;
     background-color: white !important;
