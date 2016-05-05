@@ -190,3 +190,7 @@ body{
 .info-text{
     padding: 0em 2em;
 }
+.check-in-button-details{
+    float: right;
+    padding-right: 0.4em;
+}
