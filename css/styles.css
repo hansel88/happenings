@@ -216,5 +216,8 @@ body{
 }
 .check-in-button-details{
     float: right;
-    padding-right: 0.4em;
+    padding: 0.4em;
+}
+.details-header{
+    display: inline;
 }
