@@ -64,12 +64,6 @@
         margin-top: 0.8em;
         font-size: 0.8em;
     }
-
-    #side #about a{
-        font-size:0.8em;
-        border: 1px solid white;
-        padding: 0.15em 0.4em 0.15em;
-    }
 }
 
 @media (min-width: 768px)
@@ -81,7 +75,7 @@
 
     .navbar-toggle
     {
-        display: block;
+        display: inline-block;
     }
 
     .navbar-collapse.collapse
@@ -125,7 +119,7 @@
     position: absolute;
     height: 100%;
     width: 0;
-    max-width: 800px;
+    max-width: 400px;
     left: 0;
     z-index: 99;
     top: 0;
@@ -150,10 +144,10 @@
 #side #about a{
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.9em;
     display: inline-block;
-    border: 2px solid white;
-    padding: 0.35em 0.7em 0.35em;
+    border: 1px solid white;
+    padding: 0.15em 0.4em 0.15em;
 }
 
 #side #about a:hover{
@@ -163,7 +157,7 @@
 
 #side #about{
     position: absolute;
-    bottom: 5px;
+    bottom: 8px;
     display: block;
     width: 100%;
 }
