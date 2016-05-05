@@ -95,11 +95,11 @@
  margin:0 auto;
  float:none;
  text-align: center;
- padding-top: 5em;
+ padding: 4em 2em 2em;
 }
 
 .center-block *{
-    max-width: 90%;
+    max-width: 100%;
 }
 
 #side{
@@ -117,6 +117,10 @@
 
 #side #side-container{
     opacity: 0;
+}
+
+#side h3{
+    margin: 0;
 }
 
 body{
