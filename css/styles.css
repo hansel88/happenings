@@ -209,6 +209,8 @@ body{
 .slider.off {
     left: 0;
 }
+
+/* details page style */
 .event-detail-list{
     padding-left: 0;
 }
@@ -222,6 +224,8 @@ body{
 .details-header{
     display: inline;
 }
+
+/* details page style END */
 
 .list-view img{
     max-width: 90%;
