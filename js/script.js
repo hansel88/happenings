@@ -68,9 +68,25 @@ init = function(){
 			$('#side-container').animate({opacity: 0 }, 200); 
 		}
 
+    if( $('#filter').css('display') != 'none'){
+      $('#filter').animate({height: 0}, 500).delay(500).css('display', 'none');
+    }
+
 	});
 
 	$("[name='my-checkbox']").bootstrapSwitch();
+
+  $('#filterLink').click(function(){
+    if( $('#filter').css('display') == 'none'){
+      $('#filter').css('display', 'inline'); 
+      $('#filter').animate({height: '300px'}, 500);
+      $('#filter-container').delay(350).animate({opacity: 1 }, 700);
+    }else{
+      $('#filter-container').animate({opacity: 0 }, 200);
+      $('#filter').animate({height: 0}, 500).delay(500).css('display', 'none');
+    }
+
+  });
 };
 
 function replaceClass(elt, oldClass, newClass) {
