@@ -224,6 +224,10 @@ body{
 .details-header{
     display: inline;
 }
+.facebook-friends-icon{
+    
+    border: 20px;
+}
 
 /* details page style END */
 
