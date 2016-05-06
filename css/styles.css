@@ -66,23 +66,23 @@
     }
 }
 
+
+
 @media (min-width: 768px)
 {
-    .navbar-header
-    {
-        float: none;
+    .navbar-nav{
+        float: right;
     }
 
-    .navbar-toggle
-    {
-        display: inline-block;
-    }
-
-    .navbar-collapse.collapse
-    {
-        display: none !important;
+    #side .row{
+        margin-top: 1em;
+        font-size: 1.3em;
+        position: relative;
     }
 }
+
+
+
 
 #map{
     position: absolute;
@@ -137,8 +137,9 @@
 
 #side .row{
     margin-top: 1em;
-    font-size: 1.3em;
+    font-size: 1.1em;
     position: relative;
+    line-height: 30px;
 }
 
 #side #about a{
