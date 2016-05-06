@@ -28,12 +28,34 @@ function getParameterByName(name, url) {
   });
 
     marker.addListener('click', function() {
-		window.location.href = "details.html";
+		window.location.href = "details.html?location=sentrumscene";
+  });
+
+  var marker2 = new google.maps.Marker({
+    position: {lat: 59.9138697, lng: 10.752245},
+    label: 'Justisen bar',
+    map: map,
+    title: 'Justisen Bar'
+  });
+
+    marker2.addListener('click', function() {
+    window.location.href = "details.html?location=justisen";
+  });
+
+  var marker3 = new google.maps.Marker({
+    position: {lat: 59.913269, lng: 10.760133},
+    label: 'Dattera til Hagen',
+    map: map,
+    title: 'Dattera til Hagen'
+  });
+
+    marker3.addListener('click', function() {
+    window.location.href = "details.html?location=dattera";
   });
 
 	var image = 'https://bluedogtraining.com.au/assets/images/frontend/ui/icons/icon_small_location.png';
-	var marker2 = new google.maps.Marker({
-        position: {lat: 59.913810, lng: 10.752200},
+	var marker4 = new google.maps.Marker({
+        position: {lat: 59.912410, lng: 10.752200},
         map: map,
         icon: image,
     	title: 'Your location'
