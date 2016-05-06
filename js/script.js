@@ -84,11 +84,6 @@ init = function(){
 			$('#side').delay(300).animate({width: 0 }, 300);
 			$('#side-container').animate({opacity: 0 }, 200); 
 		}
-
-    if( $('#filter').css('display') != 'none'){
-      $('#filter').animate({height: 0}, 500).delay(500).css('display', 'none');
-    }
-
 	});
 
 	$("[name='my-checkbox']").bootstrapSwitch();
