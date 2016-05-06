@@ -46,7 +46,7 @@ function getParameterByName(name, url) {
   }
 
 init = function(){
-	var chosenActivity = getParameterByName('activity');
+	var chosenLocation = getParameterByName('location');
 	//$('#selectedActivity').text('- Nearby ' + chosenActivity);
 	initMap();
 
