@@ -28,7 +28,7 @@ function getParameterByName(name, url) {
   });
 
     marker.addListener('click', function() {
-		window.location.href = "details.html?location=sentrumscene";
+		window.location.href = "details.html?location=sentrumScene";
   });
 
   var marker2 = new google.maps.Marker({

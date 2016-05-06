@@ -12,11 +12,11 @@
 
 init = function(){
 	var chosenLocation = getParameterByName('location');
+    console.log(chosenLocation);
     if(chosenLocation == 'sentrumScene'){
         $('.details-header').attr("Scentrum Scene");
-        console.log("chosenLocation");
     };
 };
     init();
     
-});
+})();
