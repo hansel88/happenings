@@ -47,6 +47,23 @@ function getParameterByName(name, url) {
 
 init = function(){
 	var chosenActivity = getParameterByName('activity');
+  if(chosenActivity == 'all'){
+    $( ".filter-input" ).each(function() {
+      $(this).attr('checked', true);
+    });
+  }
+  else if(chosenActivity == 'food'){
+    $('#restaurant-filter').attr('checked', true);
+    $('#cafe-filter').attr('checked', true);
+  }
+  else if(chosenActivity == 'clubs'){
+    $('#pubs-filter').attr('checked', true);
+    $('#clubs-filter').attr('checked', true);
+  }
+  else if(chosenActivity == 'entertainment'){
+    $('#standup-filter').attr('checked', true);
+    $('#concert-filter').attr('checked', true);
+  }
 	//$('#selectedActivity').text('- Nearby ' + chosenActivity);
 	initMap();
 
