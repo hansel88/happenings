@@ -22,6 +22,11 @@ init = function(){
         $('.details-header').text("Justisen");
         $('.details-image').attr("src", "../assets/images/Justisen_3.jpg");
         $('.details-info').text("Masse info om Justisen dette as.");
+   
+    } else if(chosenLocation == 'dateraTilHagen') {
+        $('.details-header').text("Justisen");
+        $('.details-image').attr("src", "../assets/images/Justisen_3.jpg");
+        $('.details-info').text("Masse info om Justisen dette as.");
     };
 };
     init();
