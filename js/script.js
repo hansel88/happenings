@@ -73,6 +73,8 @@ init = function(){
     $( ".filter-input" ).each(function() {
       $(this).attr('checked', true);
     });
+    $('#restaurant-filter').attr('checked', false);
+    $('#cafe-filter').attr('checked', false);
   }
   else if(chosenActivity == 'food'){
     $('#restaurant-filter').attr('checked', true);
@@ -112,7 +114,7 @@ init = function(){
 
   $('#filterLink').click(function(){
     if( $('#filter').css('display') == 'none'){
-      $('#filter').animate({height: '300px'}, 300).css('display', 'block'); 
+      $('#filter').animate({height: '200px'}, 300).css('display', 'block'); 
       $('#filter-container').delay(0).animate({opacity: 1 }, 700);
     }else{
       $('#filter-container').animate({opacity: 0 }, 200);
