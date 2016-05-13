@@ -21,12 +21,12 @@ init = function(){
     } else if(chosenLocation == 'justisen') {
         $('.details-header').text("Justisen");
         $('.details-image').attr("src", "../assets/images/Justisen_3.jpg");
-        $('.details-info').text("Masse info om Justisen dette as.");
+        $('.details-info').text("Justisen restaurant, bar og bakgård har gjenåpnet sine dører med et nytt og spennende konsept i Møllergata 15. Her finner du restaurant, bakgård, salonger, cocktail bar, kjøkken bar og mer. Velkommen");
    
-    } else if(chosenLocation == 'dateraTilHagen') {
-        $('.details-header').text("Justisen");
-        $('.details-image').attr("src", "../assets/images/Justisen_3.jpg");
-        $('.details-info').text("Masse info om Justisen dette as.");
+    } else if(chosenLocation == 'dattera') {
+        $('.details-header').text("Dattera til Hagen");
+        $('.details-image').attr("src", "../assets/images/datteraTilHagen.jpg");
+        $('.details-info').text("Dattera til Hagen er en fargerik bar, café og klubb fordelt over to etasjer med Oslos fineste bakgård.");
     };
 
     $('.check-in-button-details').click(function(event){
